@@ -1,7 +1,7 @@
 export default function Header() {
     return (
         <header>
-            <nav className="flex items-center mt-5 bg-[rgba(255,255,255,0.1)] backdrop-blur-[2px] p-2.5 rounded-md">
+            <nav className="select-none flex items-center mt-5 bg-[rgba(255,255,255,0.1)] backdrop-blur-[2px] p-2.5 rounded-md">
                 <span className=" text-4xl font-bold mr-2.5">Ankit</span>
                 <ul className="relative top-1 flex">
                     <li className="m-5 cursor-pointer group">
