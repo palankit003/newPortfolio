@@ -15,13 +15,17 @@ export default function Hero() {
         'Backend Developer'
     ];
     const accentColors = [
-        '#008080', // Teal
-        '#FF6F61', // Coral
-        '#4169E1', // Royal Blue
-        '#DAA520', // Goldenrod
-        '#DA70D6', // Orchid
-        '#32CD32', // Lime Green
+        '#FFD700', // Gold/Yellow
+        '#FFA500', // Orange
+        '#FF6F61', // Coral/Pink
+        '#C0C0C0', // Silver/Gray
+        '#40E0D0', // Turquoise
+        '#98FB98'  // Mint Green
     ];
+
+    // Example of accessing the colors in the array
+    console.log(accentColors[0]); // Outputs: #FFD700 (Gold/Yellow)
+    console.log(accentColors[2]); // Outputs: #FF6F61 (Coral/Pink)
 
 
     const [capabilitesIndex, setCapabilitiesIndex] = useState(0)
@@ -33,10 +37,9 @@ export default function Hero() {
         return () => clearInterval(intervalId);
     }, [capabilitesIndex]);
 
-
     return (
         <h1 className={`${righteous.className} text-6xl mt-20`}>
-            Hi, I am a <span className={` text-[${accentColors[capabilitesIndex]}]`}>{capabilitiesList[capabilitesIndex]}</span>
+            Hi, I am a <span style={{ color: `${accentColors[capabilitesIndex]}` }}>{capabilitiesList[capabilitesIndex]}</span>
         </h1>
     )
 }
