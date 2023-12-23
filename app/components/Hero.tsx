@@ -15,12 +15,7 @@ export default function Hero() {
         'Backend Developer'
     ];
     const accentColors = [
-        '#FFD700', // Gold/Yellow
-        '#FFA500', // Orange
-        '#FF6F61', // Coral/Pink
-        '#C0C0C0', // Silver/Gray
-        '#40E0D0', // Turquoise
-        '#98FB98'  // Mint Green
+        '#F9ED69'
     ];
 
     // Example of accessing the colors in the array
@@ -38,8 +33,13 @@ export default function Hero() {
     }, [capabilitesIndex]);
 
     return (
-        <h1 className={`${righteous.className} text-6xl mt-20`}>
-            Hi, I am a <span style={{ color: `${accentColors[capabilitesIndex]}` }}>{capabilitiesList[capabilitesIndex]}</span>
-        </h1>
+        <>
+            <div className="mt-20">
+                <p className={`${righteous.className} text-orange-600 text-2xl bg-white w-fit px-2`} >Ankit Pal</p>
+                <h1 className={`${righteous.className} text-6xl`}>
+                    Hi, I am a <span style={{ color: `${accentColors[capabilitesIndex % accentColors.length]}` }}>{capabilitiesList[capabilitesIndex]}</span>
+                </h1>
+            </div>
+        </>
     )
 }
