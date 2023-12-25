@@ -29,10 +29,10 @@ export default function Hero() {
 
     return (
         <>
-            <div className="mt-20">
-                <p className={`${righteous.className} text-orange-600 text-2xl bg-white w-fit px-2`} >Ankit Pal</p>
-                <h1 className={`${righteous.className} text-6xl flex`}>
-                    Hi, I am a &nbsp;<div>
+            <div className="mt-40">
+                <p className={`${righteous.className} text-orange-600 text-2xl bg-white w-fit px-2`} >ANKIT PAL</p>
+                <h1 className={`${righteous.className} text-6xl`}>
+                    Hi, I am a &nbsp;<div className=" w-fit">
                         <div>Full Stack Developer</div>
                         <div className="w-full h-2 bg-[#FFDB58]"></div>
                     </div>
