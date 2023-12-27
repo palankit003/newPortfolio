@@ -8,13 +8,12 @@ const righteous = Righteous({
 export default function Hero() {
 
     return (
-
-        <div className="flex flex-col lg:flex-row justify-between mt-40 mx-20">
+        <div className="flex flex-col lg:flex-row justify-between pt-40 lg:px-20 h-full px-5">
             <div>
                 <p className={`${righteous.className} text-orange-600 text-2xl bg-white w-fit px-2`} >ANKIT PAL</p>
                 <h1 className={`${righteous.className} text-6xl`}>
                     Hi, I am a &nbsp;<div className=" w-fit">
-                        <div>Full Stack Developer</div>
+                        <div className='sm:text-4xl lg:text-6xl'>Full Stack Developer</div>
                         <div className="w-full h-2 bg-[#FFDB58]"></div>
                     </div>
                 </h1>
@@ -24,7 +23,7 @@ export default function Hero() {
                 </div>
             </div>
             <div className=' relative rounded-full lg:w-[400px] lg:h-[400px] border-yellow-300 border-[0.5rem] border-b-[#00000000] pt-2'>
-                <Image src={User} alt='ankit pal' className='absolute right-[15%] top-[7%] w-[75%]' />
+                <Image src={User} alt='ankit pal' className=' -z-10 absolute right-[15%] top-[7%] w-[75%]' />
             </div>
         </div>
 
